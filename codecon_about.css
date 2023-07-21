@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+
+* {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #191825;
+    // color: #865DFF;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    font-size: 20px;
+    color: #E384FF;
+}
+
+.short {
+    display: none;
+}
+
+a {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    color: #E384FF;
+}
+
+.logologo {
+    text-align: center;
+}
+
+.container {
+    margin: 4rem;
+    color: #E384FF;
+}
+
+h2 {
+    color: white;
+}
+
+.dates {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        /* text-align: center; */
+        /* margin: 4rem; */
+        font-size: 15px;
+        color: #E384FF;
+    }
+
+    a {
+        /* margin-left: 2rem; */
+        /* margin-top: 2rem; */
+        margin-right: 1rem;
+        color: #E384FF;
+    }
+
+    .links {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .logonav {
+        text-align: center;
+        /* margin-bottom: 2rem; */
+        display: none;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+    .container {
+        margin: 1rem;
+        color: #E384FF;
+    }
+}

@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <link rel="stylesheet" href="register.css"> -->
+    <script src="https://kit.fontawesome.com/170875e863.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="codecon_index.css">
+</head>
+<style>
+    @media screen and (max-width: 800px) {
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            /* text-align: center; */
+            /* margin: 4rem; */
+            font-size: 15px;
+            color: #E384FF;
+        }
+
+        a {
+            /* margin-left: 2rem; */
+            /* margin-top: 2rem; */
+            margin-right: 1rem;
+            color: #E384FF;
+        }
+
+        .links {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .logonav {
+            text-align: center;
+            /* margin-bottom: 2rem; */
+            display: none;
+        }
+
+        h1 {
+            font-size: 10vw;
+        }
+
+        h2 {
+            font-size: 5vw;
+        }
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <div class="logonav"><a href="index.html">Neural Nexus</a></div>
+        <div class="links">
+
+            <a href="codecon_about.html" rel="noopener noreferrer">ABOUT</a>
+            <a href="codecon_index.html" rel="noopener noreferrer">CodeCon</a>
+
+        </div>
+    </div>
+
+    <!-- <p style="font-size: 15px; color: white; text-align: center; font-weight: 600;">Early Bird Offer Ends in:</p>
+    <p id="demo" style="color: #E384FF; font-size: 25px;">
+    <h2></h2> -->
+    </p>
+    <p style="font-size: 15px; color: #E384FF; text-align: center; font-weight: 600;">Looking for a Team? Join the LFT
+        Channel in our discord server - <br><br><a style="color: white; margin: 0px;"
+            href="https://discord.gg/h5HmfxtG"><i class="fa-brands fa-discord" style="font-size: 30px;"></i>
+        </a> </p>
+    <!-- <h1>Team Registration Form</h1> -->
+    <center>
+        <h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSeJ62wuW8PPe3-QrE6FFkpWc8VbdAFvi9tAiLLCxmhKLS-Ybg/viewform?usp=sf_link"
+                style="color: white;">Click here to Register
+                for CodeCon</a>
+        </h2>
+    </center>
+
+    <br>
+    <center class="footer">
+        Website developed and maintained by Sai Teja and NN Website Team
+    </center>
+</body>
+<script>
+    var countDownDate = new Date("July 10, 2023 23:59:59").getTime();
+    function clickk() {
+        submitbtn.style.display = "None";
+    }
+    function aftersubmit() {
+        // submitbtn.innerHTML = "<p>Redirecting...</p>";
+        // alert("Registered successfully!");
+        redd.innerText = "Registered Successfully";
+        location.replace("https://chat.whatsapp.com/CAiIXToRuMQL7KANmSwmMt")
+    }
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + ": " + hours + "h " + ": "
+            + minutes + "m " + ": " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+
+</script>
+
+</html>

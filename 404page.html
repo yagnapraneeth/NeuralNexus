@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+
+    * {
+        font-family: 'JetBrains Mono', monospace;
+        background-color: #191825;
+
+        text-decoration: none;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        color: white;
+        margin-top: 5rem;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem;
+        font-size: 20px;
+        color: #E384FF;
+    }
+
+    a {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color: #E384FF;
+    }
+
+    @media screen and (max-width: 800px) {
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            /* text-align: center; */
+            /* margin: 4rem; */
+            font-size: 15px;
+            color: #E384FF;
+        }
+
+        a {
+            /* margin-left: 2rem; */
+            /* margin-top: 2rem; */
+            margin-right: 1rem;
+            color: #E384FF;
+        }
+
+        .links {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .logonav {
+            text-align: center;
+            /* margin-bottom: 2rem; */
+            display: none;
+        }
+
+        h1 {
+            font-size: 10vw;
+        }
+
+        h2 {
+            font-size: 5vw;
+        }
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <div class="logonav"><a href="index.html"> Neural Nexus</a></div>
+        <div class="links">
+            <a href="events.html" rel="noopener noreferrer">EVENTS</a>
+            <a href="teams.html" rel="noopener noreferrer">TEAM</a>
+            <a href="about.html" rel="noopener noreferrer">ABOUT</a>
+            <!-- <a href="http://" rel="noopener noreferrer">DISCORD</a> -->
+        </div>
+    </div>
+    <center>
+        <h1 data-value="Error 404">Error 404</h1>
+    </center>
+
+</body>
+<script src="index.js"></script>
+
+</html>
